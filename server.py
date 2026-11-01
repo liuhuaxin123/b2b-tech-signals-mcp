@@ -3,8 +3,8 @@ import json
 import httpx
 from mcp.server.mcpserver import MCPServer
 
-# Configuration
-API_HOST = os.environ.get("B2B_SIGNALS_API_HOST", "http://127.0.0.1:8000")
+# Configuration - Permanent Production Endpoint on Render
+API_HOST = os.environ.get("B2B_SIGNALS_API_HOST", "https://b2b-tech-signals-api.onrender.com")
 API_KEY = os.environ.get("B2B_SIGNALS_API_KEY", "")
 RAPIDAPI_HOST = os.environ.get("RAPIDAPI_HOST", "b2b-tech-signals.p.rapidapi.com")
 
